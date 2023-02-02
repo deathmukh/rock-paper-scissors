@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body class="preload">
+  <div class="container">
+    <header class="header">
+      <h1>ROCK <br> PAPER<br> SCISSORS</h1>
+      <div class="score">
+        <div class="score-container">YOUR<br>SCORE</div>
+        <div class="score-count">0</div>
+      </div>
+    </header>
+    <section class="home-page gesture-buttons">
+      <button class="choice-btn" data-choice="paper">
+        <div class="choice paper">
+          <img src="./images/paper.png" alt="Paper" />
+        </div>
+      </button>
+      <button class="choice-btn" data-choice="scissors">
+        <div class="choice scissors">
+          <img src="./images/scissors.png" alt="Scissors" />
+        </div>
+      </button>
+      <button class="choice-btn" data-choice="rock">
+        <div class="choice rock">
+          <img src="./images/rock.png" alt="Rock" />
+
+
+          <!-- <img src="images/Line 1.png" class="line-img1">
+        <img src="images/Line 2.png" class="line-img2" >
+       <img  src="images/Line 3.png" class="line-img3"> -->
+          <!-- used a triangle image from a source on stack overflow instead of styling three lines -->
+        </div>
+      </button>
+    </section>
+  </div>
+
+  <section class="results hidden">
+
+    <h2 class="results-header">YOU PICKED</h2>
+    <h2 class="results-header">THE PC PICKED</h2>
+
+    <div class="actual-result"></div>
+    <div class="winner-result hidden">
+      <h3 class="text-result"></h3>
+      <div class="buttons-container">
+        <button id="play-again" style="margin-bottom: 20px;">PLAY AGAIN</button>
+       </div>
+
+
+    </div>
+    <!-- <div class="try-again" id="tryAgain" style="text-align: center; margin-top:150px;">TRY AGAIN</div> -->
+
+    <div class="actual-result"></div>
+    
+  </section>
+
+  <!-- <button class="rules-btn" tabindex="1">rules</button>
+  <div class="modal">
+    <div class="modal__container">
+      <header class="modal__header">
+        <h2 class="modal__heading">rules</h2>
+        <button class="close-btn">
+          <img src="./images/icon-close.svg" alt="Close Button" />
+        </button>
+      </header>
+      <img src="./images/image-rules.svg" alt="Rules Image" class="rules-img" />
+    </div>
+  </div> -->
+
+  <div class="rules">
+    <div class="rules1">
+
+
+      <button class="x-button" id="terminate-rules">X</button>
+      <h2>Game Rules</h2>
+      <ul>
+        <li>
+          <h6>Rock beats scissors, scissors beats paper and paper beats rock.</h6>
+        </li>
+        <li>
+          <h6>Agree ahead of time whether you'll count off 'rock, paper, scissors,
+            shoot' or just 'rock, paper, scissors.'
+          </h6>
+        </li>
+        <li>
+          <h6>Use rock, paper, scissors to settle minor decissions or simply play
+            to pass the time.</h6>
+        </li>
+        <li>
+          <h6> If both players lay down the same hand, each player lays down
+            another hand.</h6>
+        </li>
+      </ul>
+    </div>
+    <button class="button-rules" id="display-rules"> RULES</button>
+
+  </div>
+
+</body>
+
+</html>
